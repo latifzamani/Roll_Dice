@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--------------------------------------------->
+  <!--       Author:Abdul_Latif Zamani         -->
+  <!--------------------------------------------->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roll_Dice</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container ">
+    <div class="player float-left  player0 player-active">
+      <h4 id="player_name">PLAYER 1</h4>
+
+      <h1 id="score" class="score-0">0</h1>
+
+      <div class="current">
+        <p id="currentlable">Current</p>
+        <p id="currentscore-0">0</p>
+      </div>
+
+    </div>
+
+    <div class="player float-right player1  ">
+      <h4 id="player_name">PLAYER 2</h4>
+      <h1 id="score" class="score-1">0</h1>
+
+      <div class="current">
+        <p id="currentlable">Current</p>
+        <p id="currentscore-1">0</p>
+      </div>
+    </div>
+
+    <img src="../image/dice-1.png" class="dice">
+    <button class="btn btn-white btnstyle btnnew">🔄New Game</button>
+    <button class="btn btn-white btnstyle btnroll">🎲Roll Dice</button>
+    <button class="btn btn-white btnstyle btnhold">✋Hold</button>
+    <button class="btn btn-white btnstyle btnrule">Rules of Game</button>
+
+    <div class="rules">
+      <h4 class="text-center ">The Rules of Game</h4>
+      <p>
+        <ol>
+          <li>
+            Winer is the person who takes 100 score or more.
+          </li>
+          <li>
+            If your dice is 1 than your score will become zero and
+            the turn will change to the next player.
+          </li>
+          <li>
+            Hold button will save your score.
+          </li>
+          <li>
+            New button will restart the game.
+          </li>
+        </ol>
+      </p>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+  </div>
+  <script src="../js/js.js"></script>
+</body>
+
+</html>
